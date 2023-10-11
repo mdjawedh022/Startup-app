@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup-app</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+  <body>
+    <!-- -------------------sidenav----------------- -->
+    <div id="mySidenav" class="sidenav">
+      <div class="head-sidenav">
+        <h2>Startup 3</h2>
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      </div>
+
+      <a href="#">Overview</a>
+      <a href="#">Price</a>
+      <a href="#">Blog</a>
+      <a href="#">Purchase</a>
+      <button class="btn1">Purchase</button>
+    </div>
+    <!-- ---------------------navbar---------------- -->
+    <div class="navbar-wrapper">
+      <h2>Starup 3</h2>
+      <ul class="menu-link">
+        <li><a href="#" class="overview">Overview</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><button class="btn">Purchase</button></li>
+      </ul>
+      <button onclick="openNav()" class="hamburger">&#9776;</button>
+    </div>
+    <!-- --------------------------hero-section----------------------- -->
+    <div class="container">
+        
+    </div>
+  </body>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+</html>

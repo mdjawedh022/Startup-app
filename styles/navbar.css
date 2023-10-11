@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(10, 10, 124);
+  font-family: "Lato", sans-serif;
+}
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  position: fixed;
+  width: 100%;
+  top: 7%;
+}
+.navbar-wrapper h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+}
+.menu-link {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  /* border: solid; */
+}
+.menu-link li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu-link .btn {
+  padding: 0.7rem 2.5rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: rgb(166, 10, 93);
+}
+.menu-link li .overview {
+  color: gray;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .hamburger {
+    display: block;
+  }
+  .menu-link {
+    display: none;
+  }
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hamburger {
+    display: block;
+  }
+  .menu-link {
+    display: none;
+  }
+  .navbar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+    padding: 1rem 2rem;
+    top: 7%;
+  }
+}
+/* -------------------------sidenav--------------------------- */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #535252;
+  display: block;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.sidenav a:hover {
+  color: #101010;
+}
+.head-sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: transparent;
+}
+.head-sidenav h2 {
+  background-color: transparent;
+}
+.sidenav .btn1 {
+  padding: 0.7rem 2.5rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: rgb(166, 10, 93);
+}
+.hamburger {
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .head-sidenav {
+    padding: 1rem 1rem;
+  }
+}
