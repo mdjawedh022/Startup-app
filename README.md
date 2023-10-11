@@ -9,3 +9,4 @@ tech-stack HTML CSS and a little bit of JavaScript.
  https://startup-3-23.netlify.app/
  <br/>
 ![Screenshot 2023-10-12 021514](https://github.com/mdjawedh022/Startup-app/assets/107981893/4eb3f8a2-7b5f-43ba-84a5-8537244694e9)
+![Screenshot 2023-10-12 021514](https://github.com/mdjawedh022/Startup-app/assets/107981893/1f84d088-556a-4e32-93ca-e059ff2db97f)
