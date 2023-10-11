@@ -1,3 +1,347 @@
-.container{
-    background-color:rgb(193, 8, 128);
+.container {
+  background-color: rgb(15, 15, 143);
+  margin-top: 13rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 1rem 14rem;
+
+}
+
+.inner-container h1 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  width: 90%;
+  line-height: 5rem;
+  color: #ffffff;
+}
+.inner-container #inner-div-text {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  text-align: justify;
+  width: 70%;
+  line-height: 2.2rem;
+  color: #ffffff;
+}
+.inner-container #learn-more {
+  padding: 1rem 2.5rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  background-color: rgb(210, 13, 128);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 3rem 4.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.form #form-heading{
+    background-color: transparent;
+    color:rgb(22, 22, 63);
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+.form #email,#password{
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 40px;
+    border: 2px solid rgba(234, 228, 228, 0.937);
+    margin: 1.5rem 0 0 0;
+    color: #b4aeae;
+    font-size: 1rem;
+    outline: none;
+
+}
+.checkbox-text{
+    display: flex;
+    align-items: center;gap: 10px;
+    background-color: transparent;
+    margin: 2rem 0;
+}
+.sign-in{
+    background-color:rgb(41, 95, 243);
+    padding: 1rem;
+    border-radius: 40px;
+    border:none;
+    margin: .5rem 0 1.8rem 0;
+    color: #f7f4f4;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.checkbox-text p{
+    background-color: transparent;
+    color:  rgba(196, 187, 187, 0.999);
+}
+.login-via-twitter{
+    background-color:rgb(56, 188, 235);
+    padding: 1rem;
+    border-radius: 40px;
+    border:none;
+    margin: 1.8rem 0 1rem 0;
+    color: #f7f4f4;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.line-div{
+    display:grid;
+    grid-template-columns: repeat(3,40% 10% 40%);
+    background-color:transparent;
+    color: #ffffff;
+    align-items: center;
+    gap: 5px;
+}
+.line-div span{
+    background-color:transparent;
+    color:  #cdc6c6;
+}
+.line-div div{
+    
+    border-top: 2px solid #cdc6c6;
+}
+#p-tag{
+    font-size: 1.3rem;
+    background-color: transparent;
+    color:  #cdc6c6;
+    margin-top: 1.5rem;
+    letter-spacing:.5px;
+}
+#p-tag span{
+    background-color: transparent;
+    color: rgb(72, 240, 184);
+    cursor: pointer;
+}
+@media screen and (max-width:1050px)  {
+    .container {
+       margin-top: 11rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 5rem;
+      
+      }
+      
+      .inner-container h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        width: 90%;
+        line-height: 4rem;
+        color: #ffffff;
+      }
+      .inner-container #inner-div-text {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        text-align: justify;
+        width: 70%;
+        line-height: 2rem;
+        color: #ffffff;
+      }
+      .inner-container #learn-more {
+        padding: 1rem 2.4rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+   
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          padding: 3rem 4rem;
+          text-align: center;
+          border-radius: 10px;
+      }
+      .form #form-heading{
+          background-color: transparent;
+          color:rgb(22, 22, 63);
+          font-size: 2rem;
+          margin: 1.5rem 0;
+      }
+      .sign-in{
+          margin: .4rem 0 1.8rem 0;
+          font-size: 1rem;
+      }
+      .checkbox-text p{
+        font-size: .9rem;
+      }
+      .login-via-twitter{
+          margin: 1.8rem 0 1rem 0;
+          font-size: 1rem;
+      }
+      .line-div{
+          display:grid;
+          grid-template-columns: repeat(3,40% 10% 40%);
+          background-color:transparent;
+          color: #ffffff;
+          align-items: center;
+          gap: 5px;
+      }
+    
+      #p-tag{
+          font-size: 1rem;
+      }
+}
+/* ---------------------------- */
+@media screen and (max-width:850px)  {
+    .container {
+       margin-top: 9rem;
+       display: flex;
+       flex-direction: column;
+        padding: 1rem 6rem;
+        text-align: center;
+      
+      }
+      
+      .inner-container h1 {
+        font-size: 3rem;
+        width: 70%;
+        margin: auto;
+      }
+      .inner-container #inner-div-text {
+        font-size: 1.2rem;
+        text-align: justify;
+        width: 65%;
+        margin:2rem auto 1rem;
+      }
+      .inner-container #learn-more {
+        padding: 1rem 2.4rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+   
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          padding: 3rem 3rem;
+      }
+      .form #form-heading{
+          background-color: transparent;
+          color:rgb(22, 22, 63);
+          font-size: 1.8rem;
+          margin: 1rem 0;
+      }
+  
+      #p-tag{
+          font-size: .9rem;
+      }
+}
+/* ------------ */
+@media screen and (max-width:450px)  {
+    .container {
+       margin-top:8rem;
+       padding: 1rem .5rem;
+        text-align: center;
+      
+      }
+      
+      .inner-container h1 {
+        font-size: 2rem;
+        width: 70%;
+        line-height: 2.5rem;
+        margin: auto;
+      }
+      .inner-container #inner-div-text {
+        font-size: 1rem;
+        text-align: justify;
+        width: 74%;
+        margin:1rem auto 1rem;
+      }
+      .inner-container #learn-more {
+        padding: 1rem 2.3rem;
+        font-size: .9rem;
+        margin-top: 1.8rem;
+        margin-bottom: 2.5rem;
+   
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          padding:2.5rem;
+      }
+      .form #form-heading{
+          background-color: transparent;
+          color:rgb(22, 22, 63);
+          font-size: 1.3rem;
+          margin: 1rem 0;
+      }
+      .form  #email,#password{
+        font-size:.9rem;
+      }
+      .checkbox-text p{
+        font-size: .8rem;
+      }
+      #p-tag{
+          font-size: .8rem;
+      }
+}
+@media screen and (max-width:350px)  {
+    .container {
+       margin-top:8rem;
+       padding: 1rem .5rem;
+        text-align: center;
+      
+      }
+      
+      .inner-container h1 {
+        font-size: 1.9rem;
+        width: 80%;
+        line-height: 2.5rem;
+        margin: auto;
+      }
+      .inner-container #inner-div-text {
+        font-size: .8rem;
+        width: 80%;
+        line-height: 1.5rem;
+        margin:1rem auto 1rem;
+      }
+      .inner-container #learn-more {
+        padding: 1rem 2rem;
+        font-size: .7rem;
+        margin-top: 1.8rem;
+        margin-bottom: 2.5rem;
+   
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          padding:2rem;
+
+      }
+      .form #form-heading{
+          font-size: 1.3rem;
+          margin: .1rem 0 1rem;
+      }
+      .form  #email,#password{
+        font-size:.7rem;
+        margin:.5rem;
+        padding: .7rem;
+      }
+      .sign-in{
+        font-size:.7rem;
+        margin:.5rem;
+        padding: .8rem;
+      }
+      .login-via-twitter{
+        font-size:.7rem;
+        margin:.5rem;
+        padding: .7rem;
+      }
+      .checkbox-text{
+        margin: .5rem 0;
+      }
+      .checkbox-text p{
+        font-size: .6rem;
+        
+      }
+      #p-tag{
+          font-size: .6rem;
+      }
 }

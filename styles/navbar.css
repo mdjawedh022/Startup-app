@@ -2,20 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(10, 10, 124);
+  background-color: rgb(15, 15, 143);
   font-family: "Lato", sans-serif;
 }
 .navbar-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 10rem;
+  padding: 4rem 15rem 1rem;
   position: fixed;
   width: 100%;
-  top: 7%;
+  top: 0;
 }
 .navbar-wrapper h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 500;
   cursor: pointer;
   color: #ffffff;
@@ -31,15 +31,17 @@
 .menu-link li a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 .menu-link .btn {
-  padding: 0.7rem 2.5rem;
+  padding: 0.8rem 1.8rem;
   color: white;
   border: none;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
   border-radius: 30px;
   cursor: pointer;
-  background-color: rgb(166, 10, 93);
+  background-color: rgb(210, 13, 128);
 }
 .menu-link li .overview {
   color: gray;
@@ -59,8 +61,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3rem;
-    top: 5%;
+    padding: 2rem 5.2rem;
+    top: 0;
   }
 }
 
@@ -75,9 +77,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 10rem;
-    padding: 1rem 2rem;
-    top: 7%;
+    padding: 2rem 6rem;
+    top: 0;
   }
 }
 /* -------------------------sidenav--------------------------- */
@@ -145,5 +146,8 @@
 @media screen and (max-width: 450px) {
   .head-sidenav {
     padding: 1rem 1rem;
+  }
+  .navbar-wrapper {
+    padding: 2rem 2rem;
   }
 }
